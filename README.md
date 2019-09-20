@@ -29,8 +29,8 @@ The requirements for this project are as follows:
 1. A table view that will display a list of calorie intakes.
 2. Persist the user's calorie intakes using Core Data.
 3. Use the [SwiftChart](https://github.com/gpbl/SwiftChart#whats-included-in-swiftchart) library, chart the user's calorie intake per day. 
-  1. If there are issues with your dependency building because of Swift code changes, investigate the Issues for the open source project for a solution. 
-  2. IMPORTANT: You shouldn't make local source changes to a Cocoapod (don't unlock files), otherwise someone else who tries to `pod install` won't be able to build your project.
+    1. If there are issues with your dependency building because of Swift code changes, investigate the Issues for the open source project for a solution. 
+    2. IMPORTANT: You shouldn't make local source changes to a Cocoapod (don't unlock files), otherwise someone else who tries to `pod install` won't be able to build your project.
 4. Enforce code style with the [SwiftLint](https://github.com/realm/SwiftLint) tool as a "Run Script Phase" (Install with Homebrew)
   1. Fix any errors and warnings in your code based on the rules defined in the ".swiftLint.yml" file.
   2. If you have a lot of whitespace errors you can try using the autocorrect feature (IMPORTANT: commit any code changes before running autocorrect)
