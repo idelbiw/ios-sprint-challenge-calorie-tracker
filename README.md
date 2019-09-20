@@ -30,6 +30,7 @@ The requirements for this project are as follows:
 2. Persist the user's calorie intakes using Core Data.
 3. Use the [SwiftChart](https://github.com/gpbl/SwiftChart#whats-included-in-swiftchart) library, chart the user's calorie intake per day. 
 4. Enforce code style with the [SwiftLint](https://github.com/realm/SwiftLint) tool as a "Run Script Phase" (Install with Homebrew)
+  1. Fix any errors and warnings in your code based on the rules defined in the ".swiftLint.yml" file.
 5. Use the Notification Pattern, update the chart and the table view when there are new calorie intakes.
 
 ## Go Further
