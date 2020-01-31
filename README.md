@@ -41,9 +41,9 @@ The requirements for this project are as follows:
     2. Fix any errors and warnings in your code based on the rules defined in the ".swiftLint.yml" file.
     3. If you have a lot of whitespace errors you can try using the autocorrect feature (IMPORTANT: commit any code changes before running autocorrect)
   
-      ```bash
-      swiftlint autocorrect
-      ```
+        ```bash
+        swiftlint autocorrect
+        ```
       
 5. Use the Notification Pattern, update the chart and the table view when there are new calorie intakes.
 
