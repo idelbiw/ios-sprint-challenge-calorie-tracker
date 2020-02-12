@@ -29,8 +29,15 @@ The requirements for this project are as follows:
 1. A table view that will display a list of calorie intakes.
 2. Persist the user's calorie intakes using Core Data.
 3. Use the [SwiftChart](https://github.com/gpbl/SwiftChart#whats-included-in-swiftchart) library, chart the user's calorie intake per day. 
-    1. If there are issues with your dependency building because of Swift code changes, investigate the Issues for the open source project for a solution. 
-    2. IMPORTANT: You shouldn't make local source changes to a Cocoapod (don't unlock files), otherwise someone else who tries to `pod install` won't be able to build your project.    
+    1. There can be issues building the latest release of a dependency like Cocoapods. 
+    2. Read the [Xcode 10 and Swift 4.2 fix Pull Request](https://github.com/gpbl/SwiftChart/pull/105)
+    3. To fix a Swift 5 issue, make sure you update your Podfile to use the [bugfix for issue #112](https://github.com/gpbl/SwiftChart/issues/112)
+    
+        ```
+        pod "SwiftChart", :git => 'https://github.com/gpbl/SwiftChart', :branch => 'master'
+        ```
+        
+    4. IMPORTANT: You shouldn't make local source changes to a Cocoapod (don't unlock files), otherwise someone else who tries to `pod install` won't be able to build your project.    
 4. Enforce code style with the [SwiftLint](https://github.com/realm/SwiftLint) tool as a "Run Script Phase" (Install with Homebrew)
     1. To exclude your "Pods" folder you may need to copy the ".swiftlint.yml" file from your top-level directory into your subdirectory in Terminal, otherwise you'll see code style errors about SwiftChart. 
   
