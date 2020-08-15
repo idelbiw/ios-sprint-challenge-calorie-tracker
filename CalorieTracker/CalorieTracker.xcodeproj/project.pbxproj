@@ -18,6 +18,7 @@
 		7B954A4E24E75724004DD4E2 /* CalorieIntake+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B954A4D24E75724004DD4E2 /* CalorieIntake+Convenience.swift */; };
 		7B954A7224E7941A004DD4E2 /* CalorieIntake+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B954A7024E7941A004DD4E2 /* CalorieIntake+CoreDataClass.swift */; };
 		7B954A7324E7941A004DD4E2 /* CalorieIntake+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B954A7124E7941A004DD4E2 /* CalorieIntake+CoreDataProperties.swift */; };
+		7BE4B8E324E858FE005D4DF9 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE4B8E224E858FE005D4DF9 /* Notifications.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		7B954A7024E7941A004DD4E2 /* CalorieIntake+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CalorieIntake+CoreDataClass.swift"; path = "/Users/waseemidelbi/Lambda Unit 3/Take-2/Sprint Challenges/3- calorie-tracker/CalorieTracker/CalorieTracker/CoreData/CalorieIntake+CoreDataClass.swift"; sourceTree = "<absolute>"; };
 		7B954A7124E7941A004DD4E2 /* CalorieIntake+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CalorieIntake+CoreDataProperties.swift"; path = "/Users/waseemidelbi/Lambda Unit 3/Take-2/Sprint Challenges/3- calorie-tracker/CalorieTracker/CalorieTracker/CoreData/CalorieIntake+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
 		7B954A7424E797FE004DD4E2 /* SwiftChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BE4B8E224E858FE005D4DF9 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		97A0C1624F733D8D971D7AD2 /* Pods_CalorieTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalorieTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1E1B36F2C572718BEBEFDE4 /* Pods-CalorieTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalorieTracker.debug.xcconfig"; path = "Target Support Files/Pods-CalorieTracker/Pods-CalorieTracker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,6 +110,7 @@
 				7B954A3324E74FA5004DD4E2 /* SceneDelegate.swift */,
 				7B954A3D24E74FA7004DD4E2 /* Assets.xcassets */,
 				7B954A3F24E74FA7004DD4E2 /* LaunchScreen.storyboard */,
+				7BE4B8E224E858FE005D4DF9 /* Notifications.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BE4B8E324E858FE005D4DF9 /* Notifications.swift in Sources */,
 				7B954A3624E74FA5004DD4E2 /* ViewController.swift in Sources */,
 				7B954A7224E7941A004DD4E2 /* CalorieIntake+CoreDataClass.swift in Sources */,
 				7B954A7324E7941A004DD4E2 /* CalorieIntake+CoreDataProperties.swift in Sources */,

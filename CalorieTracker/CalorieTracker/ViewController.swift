@@ -32,7 +32,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
-//        chartView.delegate = self
+        setUpChartView()
+        fetchCalorieEntries()
+        NotificationCenter.default.addObserver(self, selector: #selector(refreshViews), name: .caloriesAdded, object: nil)
+    }
+    
+    @objc func refreshViews() {
         fetchCalorieEntries()
     }
     
@@ -57,13 +62,14 @@ class ViewController: UIViewController {
             NSLog("error fetching calorie entries: \(error)")
         }
         
+    }
+    
+    func setUpChartView() {
         chartView.axesColor = .green
         chartView.gridColor = .green
         chartView.backgroundColor = .black
         chartView.labelColor = .white
-        chartView.highlightLineWidth = 10
-        chartView.lineWidth = 10
-        
+        chartView.tintColor = .blue
     }
     
     @IBAction func addEntryButtonTapped(_ sender: UIBarButtonItem) {
@@ -78,7 +84,7 @@ class ViewController: UIViewController {
             
             guard let calories = Int64(textField.text ?? "") else { return }
             
-            CalorieIntake(calories: calories, context: self.context)
+            let calorieEntry = CalorieIntake(calories: calories, context: self.context)
             
             do {
             try self.context.save()
@@ -86,7 +92,8 @@ class ViewController: UIViewController {
             NSLog("could not save to persistent store: \(error)")
             }
             
-            self.fetchCalorieEntries()
+            NotificationCenter.default.post(name: .caloriesAdded, object: calorieEntry)
+            
         }
         
         let cancelButton = UIAlertAction(title: "Cancel", style: .cancel) { (_) in
