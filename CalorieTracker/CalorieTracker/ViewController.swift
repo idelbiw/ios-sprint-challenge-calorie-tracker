@@ -39,6 +39,16 @@ class ViewController: UIViewController {
         
         do {
             self.calorieEntries = try context.fetch(CalorieIntake.fetchRequest())
+            
+            guard let entries = calorieEntries else { return }
+            var chartSeries: [Double] = []
+            
+            for entry in entries {
+                chartSeries.append(Double(Int(entry.calories)))
+            }
+            
+            self.chartView.add(ChartSeries(chartSeries))
+            
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
@@ -53,7 +63,7 @@ class ViewController: UIViewController {
         let alert = UIAlertController(title: "Add Calorie Intake", message: "Enter the amount of calories in the field", preferredStyle: .alert)
         alert.addTextField()
         
-        let submitButton = UIAlertAction(title: "Add", style: .default) { (action) in
+        let submitButton = UIAlertAction(title: "Add", style: .default) { (_) in
             
             let textField = alert.textFields![0]
             textField.keyboardType = .numberPad
