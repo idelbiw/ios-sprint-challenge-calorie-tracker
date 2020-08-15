@@ -23,12 +23,12 @@
 		0EFE27A8EFE011B8758BD790F5ECA609 /* SwiftChart-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02050FDBE46B1A141B8A1BF090E1E143 /* SwiftChart-dummy.m */; };
 		1464D70C801C4E1298856D5654473ECA /* Pods-CalorieTracker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B05980E9342010E023983343427ACE1 /* Pods-CalorieTracker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		373C85B7B6669A0A3705344EDAB91402 /* ChartColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E393D4B976ADF93401FE434D1249E /* ChartColors.swift */; };
-		7B954A6D24E79349004DD4E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
-		7B954A6E24E79356004DD4E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
-		7B954A6F24E7935E004DD4E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		7B954A7C24E79A4A004DD4E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
+		7B954A7D24E79A4B004DD4E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
+		7B954A7E24E79A4D004DD4E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
 		9B6B025901B92784B8037B236F392AA3 /* SwiftChart-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ABDE7E4B5E9252C898843482E8842145 /* SwiftChart-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A48B2603099502FCCBB27215196683FF /* Pods-CalorieTracker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF61D3E6CDBE4F45064DD460876FEE1 /* Pods-CalorieTracker-dummy.m */; };
-		AABB25CD63C72262E7FFE6F57470ACE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
+		A8C764E21927A676D41F949CCF29EE7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
 		E89F36993229D1B75DDCC7E56FC12B62 /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C96F1CC5D6C22A9DAA9D8A0E0D8374 /* Chart.swift */; };
 		F7951E078EEAB8901537CEA3C6C01859 /* ChartSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1718B5FE32CFB30B566537932C2F16FB /* ChartSeries.swift */; };
 /* End PBXBuildFile section */
@@ -41,7 +41,7 @@
 			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
 			remoteInfo = SwiftLint;
 		};
-		7B954A5A24E78CFC004DD4E2 /* PBXContainerItemProxy */ = {
+		7B954A7924E79878004DD4E2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -84,8 +84,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AABB25CD63C72262E7FFE6F57470ACE0 /* UIKit.framework in Frameworks */,
-				7B954A6F24E7935E004DD4E2 /* Foundation.framework in Frameworks */,
+				7B954A7D24E79A4B004DD4E2 /* UIKit.framework in Frameworks */,
+				7B954A7E24E79A4D004DD4E2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,8 +93,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B954A6D24E79349004DD4E2 /* UIKit.framework in Frameworks */,
-				7B954A6E24E79356004DD4E2 /* Foundation.framework in Frameworks */,
+				A8C764E21927A676D41F949CCF29EE7C /* Foundation.framework in Frameworks */,
+				7B954A7C24E79A4A004DD4E2 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +269,7 @@
 			);
 			dependencies = (
 				C6C20A735E2D5B85E7453A4762101887 /* PBXTargetDependency */,
-				7B954A5B24E78CFC004DD4E2 /* PBXTargetDependency */,
+				7B954A7A24E79878004DD4E2 /* PBXTargetDependency */,
 			);
 			name = "Pods-CalorieTracker";
 			productName = "Pods-CalorieTracker";
@@ -345,10 +345,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7B954A5B24E78CFC004DD4E2 /* PBXTargetDependency */ = {
+		7B954A7A24E79878004DD4E2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4E7BD5B8067AD0B7AFB7967E30BF1BB8 /* SwiftChart */;
-			targetProxy = 7B954A5A24E78CFC004DD4E2 /* PBXContainerItemProxy */;
+			targetProxy = 7B954A7924E79878004DD4E2 /* PBXContainerItemProxy */;
 		};
 		C6C20A735E2D5B85E7453A4762101887 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

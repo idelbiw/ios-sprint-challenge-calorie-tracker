@@ -7,7 +7,7 @@
 //
 
 import UIKit
-//import SwiftChart
+import SwiftChart
 
 class ViewController: UIViewController {
     
@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     var calorieEntries: [CalorieIntake]?
     
     @IBOutlet weak var tableView: UITableView!
-//    @IBOutlet weak var chartView: Chart!
+    @IBOutlet weak var chartView: Chart!
     
     //MARK: - Methods and IBActions -
     
