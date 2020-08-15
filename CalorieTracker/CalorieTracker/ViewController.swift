@@ -32,6 +32,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
+//        chartView.delegate = self
         fetchCalorieEntries()
     }
     
@@ -55,6 +56,13 @@ class ViewController: UIViewController {
         } catch {
             NSLog("error fetching calorie entries: \(error)")
         }
+        
+        chartView.axesColor = .green
+        chartView.gridColor = .green
+        chartView.backgroundColor = .black
+        chartView.labelColor = .white
+        chartView.highlightLineWidth = 10
+        chartView.lineWidth = 10
         
     }
     
@@ -111,3 +119,19 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
 } //End of extension
+
+//extension ViewController: ChartDelegate {
+//    
+//    func didTouchChart(_ chart: Chart, indexes: [Int?], x: Double, left: CGFloat) {
+//        <#code#>
+//    }
+//    
+//    func didFinishTouchingChart(_ chart: Chart) {
+//        <#code#>
+//    }
+//    
+//    func didEndTouchingChart(_ chart: Chart) {
+//        <#code#>
+//    }
+//    
+//}
